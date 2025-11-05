@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Verginia</title>
+  <link rel="Icon" href="fotografia.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+       cursor:url('camera.png') 10 10,auto;
+    }
+
+    header {
+      background: linear-gradient(to right, #9bffdf, #084738);
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #2d8a61;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: background 0.3s;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #8bba94;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Seção Sobre */
+    #sobre {
+      background-color: #e3f2fd;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    /* Parallax */
+    .parallax {
+      height: 400px;
+      background-image: url('imagem.png');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(255, 255, 255);
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgb(91, 135, 123);
+    }
+
+    /* Galeria */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Cards */
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 220px;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      display: inline-block;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .tag-oferta {
+      position: absolute;
+      background-color: red;
+      color: white;
+      padding: 4px 8px;
+      top: 8px;
+      left: 8px;
+      border-radius: 5px;
+    }
+
+    /* Hover */
+    .hover {
+      background-color: rgb(110, 208, 189);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+      border-radius: 8px;
+    }
+
+    .hover:hover {
+      background-color: blue;
+    }
+
+    footer {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #00c4ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<!-- Plugin VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  <header>
+    <h1>Portfólio de Verginia</h1>
+    <p>Meus projetos  de Fotografial</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou a Verginia, uma desenvolvedora e artista digital apaixonada por design, fotografia e tecnologia. Este portfólio mostra meu progresso com HTML e CSS, incluindo animações, efeitos e layout responsivo.</p>
+  </section>
+
+  <div class="parallax">Bem-vindo ao meu mundo criativo 🌈</div>
+
+  <section id="galeria">
+    <h2>Minhas fotografias</h2>
+    <div class="galeria">
+      <img src="images3.png" alt="fotografia 1">
+      <img src="imagem.png" alt="fotografia 2">
+      <img src="paisagem1.png"Pintura 3">
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2>fotos muito pedidas no mercado das mamaes</h2>
+    <div class="card">
+      <div class="tag-oferta">OFERTA!</div>
+      <img src="bebe.png" alt="bebe">
+      <h2>recenascido   m</h2>
+      <p>Sempre bom ter a recordação do seu nenem.</p>
+    </div>
+
+    <div class="card">
+      <div class="tag-oferta">OFERTA!</div>
+      <img src="festajunina.png" alt="Ensaio">
+      <h2>Festa junina </h2>
+      <p>Captura de detalhes impressionantes.</p>
+    </div>
+
+    <div class="card">
+      <div class="tag-oferta">OFERTA!</div>
+      <img src="gravida.png" alt="recenascido">
+      <h2>Gravidez</h2>
+      <p>Quanto eles estão no forninho.</p>
+    </div>
+    <div class="card">
+        <div class="tag-oferta">NOVO!</div>
+        <img src="duascameras.png" alt="Ensaio Xêrosa Kiti Salon Line">
+        <h3>Compre duas pague uma!</h3>
+        <p>Imagine conseguir comprar sua camera e tirar suas fotos explorando luz natural e cores vibrantes.</p>
+        <progress value="90" max="100"></progress>
+        <p>90% dos usuarios compraram</p>
+      </div>
+  
+  </section>
+
+  <section>
+    <h2>contatos</h2>
+    <div class="hover">A perte aqui para ver mais exemplos lindos</div>
+  </section>
+
+  <footer id="contato">
+    <p>Desenvolvido por Verginia 🤗</p>
+    <p><a href="mailto:verginia@email.com">verginia@email.com</a></p>
+  </footer>
+
+</body>
+</html>
